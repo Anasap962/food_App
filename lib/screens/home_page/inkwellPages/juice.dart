@@ -40,7 +40,7 @@ class _JuiceState extends State<Juice> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Juices',
           style: TextStyle(color: Colors.white),
         ),
@@ -48,7 +48,7 @@ class _JuiceState extends State<Juice> {
             onPressed: () {
               Navigator.of(context).pop();
             },
-            icon: Icon(Icons.arrow_back)),
+            icon: const Icon(Icons.arrow_back)),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -146,10 +146,10 @@ class _JuiceState extends State<Juice> {
                       return Container(
                         height: MediaQuery.of(context).size.height * 0.6,
                         child: GridView.builder(
-                          padding: EdgeInsets.symmetric(horizontal: 20),
+                          padding: const EdgeInsets.symmetric(horizontal: 20),
                           shrinkWrap: true,
                             gridDelegate:
-                                SliverGridDelegateWithFixedCrossAxisCount(
+                                const SliverGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 3,
                                     crossAxisSpacing: 10.0,
                                     mainAxisSpacing: 10.0),
